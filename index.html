@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Bill Splitter</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"><link href="https://fonts.googleapis.com/css?family=Crete+Round&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/d6f54cbfc3.js" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+    </head>
+    
+    <body style="background-color: #F2F1D2">
+        <section>
+            <div class="main_div">
+                <div class="box">
+                    <h1>Bill Spliter</h1>
+                    <form method="post" action="">
+                        <div class="inputBox">
+                            <input type="number" name="total-amount" id="total_amount" autocomplete="off" required>
+                            <label>Total Amount</label>
+                        </div>
+                        <div class="inputBox">
+                            <input type="number" name="grp-members" id="members" autocomplete="off" required>
+                            <label>No.of Members</label>
+                        </div>
+                        <input type="button" value="SPLIT" onclick="evensplit()">
+                        <input type="button" value="CLEAR" onclick="reset()">
+                        <div class="inputBox">
+                            <input type="text" name="grp-members" id="amt_per_person" autocomplete="off" disabled>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </section>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+        </body>
+    </html>
